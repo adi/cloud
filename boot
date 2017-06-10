@@ -1,0 +1,7 @@
+#!ipxe
+
+set base-url http://stable.release.core-os.net/amd64-usr/current
+kernel ${base-url}/coreos_production_pxe.vmlinuz initrd=coreos_production_pxe_image.cpio.gz coreos.config.url=https://example.com/pxe-config.ign
+initrd ${base-url}/coreos_production_pxe_image.cpio.gz
+sshkey ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCIWX+m8tdK7Fd6ggoF4grNX7MAMJYPqWgBvZktmKCD5bgpLJz2g2LA9BEn4f19ZitdsgSTpyEz+v1j8VrLe2qXvjbGg4meskADI6Ms95beRRi8CzU5cdnc0ZQ7bQdmZzMVhZZWeaovE9TRoAO97RcDthL4yhlo1nGzMJKXGbZ7H8CSoYJsDo0hqtpRTKCE7fQTzJfBPy5u9ObTAGCcVf7pZ4Iu2v6w/fjjYriVpKmlVnn898HM0pjcj2hgLvQuBQnjS5ZpOi3a0SJQlrrX6nmNj5E3GjwIlqt1KdxUWWbsYH6AYmctqeI79+1o9Mj0mVKPMG8Qjz/AMild36b0kEoN
+boot
